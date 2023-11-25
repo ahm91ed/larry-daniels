@@ -1,0 +1,98 @@
+@media screen and (min-width: 500px) and (max-width: 991px)
+ {
+
+
+.home-link
+{
+color: black !important;
+border: none !important;
+
+}
+
+.home-link::after
+{
+content: '';
+background-color: white;
+position: absolute;
+width: 0;
+left: 0;
+top: 0;
+transform: translateX(0);
+
+
+
+}
+
+.nav-link
+{
+text-align: left;
+
+
+
+}
+
+.navbar-nav .nav-link.active
+{
+color: black ;
+border: none;
+
+    
+}
+
+
+.anchor-style
+{
+color: black;  
+font-size: 17px;
+font-weight: 400;
+margin: 5px;
+}
+
+.home-caption h3 {
+font-size: 50px;
+font-weight: 800;
+font-style: normal;
+}
+      
+.home-caption h1 {
+font-size: 30px;
+font-weight: 200;
+font-style: normal;
+}
+
+.home-caption .animated-span
+{
+font-size: 30px;
+font-weight: 400;
+font-style: normal;
+}
+
+
+h2
+{
+font-size: 40px;
+font-weight: 900;
+font-style: normal;
+position: relative;
+margin: auto;
+/* width: 20%; */
+z-index: 5;
+}
+
+h2::before
+
+{
+content: "";
+width: 40%;
+height: 30px;
+background-image: url(../images/dots.png);
+background-repeat: repeat;
+position: absolute;
+bottom: -10px;
+left: 0; 
+z-index: -1;
+transform: translateX(75%);
+
+}
+    
+}

@@ -1,0 +1,1151 @@
+* {
+  box-sizing: border-box;
+  list-style: none !important;
+  text-decoration: none !important;
+
+}
+
+
+
+html,
+body {
+  scroll-behavior: smooth;
+  scroll-padding-top: 65px;
+}
+
+:root {
+  --main-color: ;
+  --main-padding: 10px;
+  --section-padding : 3rem;
+}
+
+
+h2
+{
+font-size: 40px;
+font-weight: 900;
+font-style: normal;
+position: relative;
+margin: auto;
+/* width: 20%; */
+z-index: 5;
+}
+
+h2::before
+
+{
+content: "";
+width: 20%;
+height: 30px;
+background-image: url(../images/dots.png);
+background-repeat: repeat;
+position: absolute;
+bottom: -10px;
+left: 0; 
+z-index: -1;
+transform: translateX(200%);
+
+}
+
+
+
+
+
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+
+
+/* ---------------------- Navbar section ----------------------
+------------------------------------------------------------- */
+
+
+.navbar
+
+{
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  z-index: 99;
+
+
+}
+
+.navbar-toggler
+{
+border: none;
+
+}
+
+.navbar-toggler:focus
+
+{
+box-shadow: none;
+
+
+}
+
+.nav-icon
+{
+color: white;
+
+}
+
+.my-bg 
+{
+background-color: rgba(128, 128, 128, 0.3) ;
+
+}
+
+
+
+.logo-style {
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.navbar-brand:hover 
+{
+color: white;
+
+
+}
+
+.anchor-style
+{
+color: white;  
+font-size: 17px;
+font-weight: 400;
+margin: 5px;
+}
+
+.nav-link:hover 
+{
+color: white;
+
+
+}
+
+
+
+.navbar-nav .nav-link.active
+{
+color: black ;
+border-bottom: solid black 2px;
+
+}
+
+.home-link
+{
+color: white !important;
+border: none !important;
+position: relative;
+}
+
+.home-link::after
+{
+content: '';
+background-color: white;
+position: absolute;
+width: 80%;
+height: 2px;
+top: 80%;
+left: 0;
+transform: translateX(5px);
+
+
+
+}
+
+.static-link
+{
+position: relative;
+}
+
+.static-border
+{
+content: '';
+background-color: black;
+position: absolute;
+width: 0;
+height: 2px;
+top: 80%;
+left: 0;
+transform: translateX(5px);
+transition: width 1s;
+
+
+}
+/* 
+.navbar-nav .nav-link.active:hover  .static-border
+{
+  width: 80%;
+}  */
+
+
+
+
+
+/* ----------------------End of Navbar section ------------------------
+---------------------------------------------------------------------- */
+
+/* ---------------------- Home section -----------------------
+------------------------------------------------------------- */
+
+#home {
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.home-layer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+}
+
+.home-caption {
+ 
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+.home-caption h3 {
+  font-size: 50px;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.home-caption h1 {
+  font-size: 60px;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.home-caption .animated-span {
+  font-size: 60px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.home-menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-menu ul a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 40px;
+  height: 40px;
+  /* border: 1px solid rgba(0, 0, 0, 0.5); */
+  background-color: black;
+  border-radius: 50%;
+  margin: .5rem;
+}
+
+/* ---------------------- End of Home section -----------------------
+-------------------------------------------------------------------- */
+
+/* ---------------------- About section ----------------------
+------------------------------------------------------------- */
+
+#about {
+  /* background-color: gray; */
+  padding: var(--section-padding);
+  margin-bottom: 1rem;
+}
+
+#about .container {
+  /* background-color: tomato; */
+  padding: var(--main-padding);
+}
+
+
+
+.about-img img {
+  width: 90%;
+}
+
+.about-img {
+padding: var(--main-padding);
+text-align: center;
+position: relative;
+z-index: 10;
+}
+
+.about-img::after
+
+{
+content: "";
+width: 80%;
+height: 80%;
+position: absolute;
+left: 0;
+background-image: url(../images/dots.png);
+background-repeat: repeat;
+ bottom: -30px;
+z-index: -1; 
+
+}
+
+
+
+
+
+
+.about-p-first
+{
+color:RGB(153, 153, 153);
+font-size: 14px;
+font-weight: 400;
+font-style: normal;
+}
+
+#about  h3
+{
+font-size: 30px;
+font-weight: 800;
+font-style: normal;
+
+
+}
+
+
+.about-span
+{
+color:RGB(116, 129, 130);
+font-size: 15px;
+font-weight: 700;
+
+}
+
+.about-p-second
+{
+font-size: 15px;
+font-weight: 400;
+color:RGB(116, 129, 130);
+font-style: normal;
+
+
+}
+
+
+.my-margin
+
+{
+margin-left: -2rem;
+
+
+}
+
+
+.progress
+ {
+  width: 100%;
+  padding: 12px 10px;
+  border-radius: 5px;
+  background: #f7f7f7;
+  -webkit-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+  position: relative;
+}
+
+
+
+.progress-bar
+{
+
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 10%;
+border-radius: 5px;
+background-color: #1c1c1c;
+-webkit-transition: all 1s;
+transition: all 1s;
+
+}
+
+
+.progress-bar h6
+{
+  font-size: 13px;
+  color: #fff;
+  position: absolute;
+  left: 10px;
+  top: 0;
+  z-index: 2;
+  
+
+}
+
+.progress-span
+{
+position: absolute;
+top: 0;
+right: 0;
+height: 100%;
+width: 10%;
+border-radius: 5px;
+background-color: #1c1c1c;
+-webkit-transition: all 1s;
+transition: all 1s;
+
+}
+
+
+
+.about-btn
+{
+padding: 8px 15px ;
+color: white;
+background-color: black;
+font-size: 15px;
+}
+
+.about-btn:hover
+{
+color: black;
+background-color: white;
+border: 1px solid black;
+}
+
+
+.about-btn2
+{
+padding: 8px 15px ;
+border: 1px solid black;
+color: black;
+background-color: white;
+font-size: 15px;
+}
+
+.about-btn2:hover
+{
+color: white;
+background-color: black;
+
+}
+
+
+
+
+/* ---------------------- End of About section ---------------
+------------------------------------------------------------- */
+
+/* ---------------------- Services section ------------------
+------------------------------------------------------------- */
+
+#services {
+  background-color: rgba(128, 128, 128, 0.1);
+  padding: var(--section-padding);
+}
+
+#services .container {
+  /* background-color: tomato; */
+  padding: var(--main-padding);
+}
+
+
+#services .container .row {
+  /* background-color: orange; */
+}
+
+.services-card {
+  /* background-color: blueviolet; */
+  padding-block: 1rem;
+  border-radius: 10px;
+  border: 1.5px solid transparent;
+}
+
+.services-icons {
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(128, 128, 128, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s;
+}
+
+.services-card:hover  .services-icons {
+  color: white;
+  background-color: black;
+}
+
+/* ---------------------- End of Services section ------------
+------------------------------------------------------------- */
+
+
+
+/* ---------------------- Work section ----------------------
+------------------------------------------------------------- */
+
+#works
+{
+background-color: white;
+padding: var(--section-padding);
+}
+
+#works .container
+{
+padding: var(--main-padding);
+
+
+}
+
+
+
+
+
+
+
+
+
+.works-menu ul
+{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: var(--main-padding);
+}
+
+.works-menu ul a
+{
+margin: var(--main-padding);
+color: rgba(0, 0, 0, 0.4);
+font-size: 20px;
+
+}
+
+
+.link-active
+{
+position: relative;
+}
+
+.link-active .test
+{
+position: absolute;
+background-color: black;
+width: 120%;
+height: 3px;
+top: 100%;
+right: -10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.works-card
+{
+position: relative;
+overflow: hidden;
+
+}
+
+
+
+.works-card img
+{
+width: 100%;
+}
+
+.works-layer
+{
+background-color: white;
+position: absolute;
+width: 95%;
+height: 95%;
+top: 2.5%;
+left: 2.5%;
+transform: translateY(10px);
+opacity: 0;
+display: flex;
+justify-content: center;
+align-items: center; 
+flex-direction: column;   
+transition: all 1s;
+}
+
+
+
+.works-card:hover  .works-layer
+
+{
+opacity: 1;
+transform: translateY(0);
+
+
+
+}
+
+
+
+
+
+
+.works-layer ul
+
+{
+ display: flex;
+justify-content: center;
+align-items: center; 
+
+}
+
+.works-layer ul a
+
+{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 5px;
+color: white;
+background-color: black;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+transition: all .5s;
+}
+
+.works-layer ul a i
+
+{
+font-size: 20px;
+
+}
+
+
+.works-layer a:hover
+{
+  color: black;
+  background-color: white;
+  border: solid 1px black;
+
+
+}
+
+
+
+
+.works-layer h5
+{
+margin-left: 1.5rem;
+transform: translateY(-15px);
+transition: all 1s;
+
+}
+
+
+
+.works-card:hover h5
+{
+transform: translateY(0);
+
+}
+
+
+
+
+.nav-tabs
+{
+border-bottom : none;
+display: flex;
+justify-content: center;
+margin-bottom: 1.5rem;
+}
+
+.nav-tabs .nav-link.active 
+{
+border: none;
+position: relative;
+background-color: transparent;
+
+}
+
+.nav-tabs .nav-link.active::before
+{
+content: '';
+background-color: #111111;
+position: absolute;
+width: 100%;
+height: 2px;
+top: 100%;
+right: 0;
+
+
+}
+
+
+
+
+
+
+.nav-tabs .nav-link
+
+{
+border: none;
+color: black;
+font-size: 16px;
+font-weight: 700;
+font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------- End of Work section ---------------
+------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------- clients section ----------------------
+------------------------------------------------------------- */
+
+#clients
+{
+background: #f7f7f7; 
+/* background-color: aqua; */
+padding: var(--section-padding);
+
+
+}
+
+
+#clients img
+{
+width: 200px;
+height: 200px;
+border-radius: 50%;
+
+} 
+
+
+.carousel-indicators
+{
+position: static;
+
+}
+
+
+.carousel-indicators [data-bs-target]
+
+{
+width: 10px;
+height: 10px;
+border-radius: 50%;
+
+}
+
+
+.carousel-indicators [data-bs-target]
+
+{
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  padding: 0;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background: #d6d6d6;
+  background-clip: padding-box;
+  border: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: .5;
+  transition: opacity .6s ease;
+
+
+}
+
+
+
+.carousel-indicators .active 
+
+{
+
+background-color: #869791;
+
+
+}
+
+
+
+.carousel-indicators [data-bs-target]:hover
+
+{
+
+  background-color: #869791;
+
+}
+
+
+
+
+/* ================ section counter ================ */
+
+
+.counter
+
+{
+background-color: #FFFFFF;
+padding: var(--section-padding);
+}
+
+.counter .container
+
+{
+padding: var(--main-padding);
+
+}
+
+
+.counter-content
+{
+text-align: center;
+padding: var(--main-padding);
+}
+
+
+.counter-icon
+
+{
+font-size: 30px;
+font-weight: 400;
+
+}
+
+
+
+.counter-number
+
+{
+  font-size: 30px;
+  font-weight: 900;
+
+  
+}
+
+
+
+.counter-word
+
+{
+  font-size: 15px;
+  font-weight: 600;
+  color: #748182;
+
+  
+}
+
+
+
+
+
+/* ---------------------- End of clients section ---------------
+------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+/* ---------------------- team section ----------------------
+------------------------------------------------------------- */
+
+#team
+{
+background-color: #F7F7F7;
+padding: var(--section-padding);
+
+}
+
+
+#team .container
+{
+/* background-color: tomato; */
+padding: var(--main-padding);
+}
+
+
+
+
+.team-content
+{
+color: white;
+padding: 5px;
+font-size: 25px;
+font-weight: 500;
+font-style: normal;
+
+}
+
+
+
+.team-layer ul
+
+{
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+
+.team-layer a
+
+{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 5px;
+color: white;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background-color: black;
+}
+
+
+.team-layer a:hover
+
+{
+color: black;
+background-color: white;
+border: solid 1px black;
+
+
+}
+
+
+
+
+.team-card
+{
+background-color: #5A5A5A;
+text-align: center;
+border-radius: 10px; 
+
+
+}
+
+
+
+.team-layer
+
+{
+background-color: #FEFCF9;
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 95%;
+height: 95%;
+top: 2.5%;
+left: 2.5%;
+opacity: 0;
+transform: scale(.5)  rotateY(180deg) ;
+transition: opacity 1s ,  transform 1s;
+
+
+}
+
+
+.team-card:hover  .team-layer
+{
+opacity: 1;
+transform: scale(1) rotateY(0) ;
+
+
+}  
+
+
+
+
+
+.team-img-layer
+
+{
+position: relative;
+background-color: tomato;
+overflow: hidden;
+}
+
+.team-img-layer img
+{
+width: 100%;
+transition: transform 1s ;  
+ 
+}
+
+
+.team-img-layer:hover  img
+{
+transform: scale(1.1,1.1);
+
+}
+
+
+
+/* ---------------------- End of team section ---------------
+------------------------------------------------------------- */
+
+
+
+
+
+
+/* ---------------------- contact section ----------------------
+------------------------------------------------------------- */
+#contact
+{
+padding: var(--section-padding);
+}
+
+#contact .container
+{
+padding: var(--section-padding);
+
+}
+
+.contact-content
+{
+text-align: center;
+padding-block: var(--main-padding);
+}
+
+.contact-content i
+{
+color: black;
+background-color: rgba(128, 128, 128, 0.6);
+border-radius: 50%;
+padding: var(--main-padding);
+transition: all 1s;
+}
+
+.contact-content:hover i
+{
+color: white;
+background-color: black;
+
+}
+
+.form-control {
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  background: #f4f4f4;
+
+}
+
+
+
+.form-control:focus {
+
+  box-shadow: none; 
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  background: #f4f4f4;
+  
+}
+
+.my-textarea
+
+{
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  background: #f4f4f4;
+  resize: none;
+
+
+}
+
+
+
+
+
+
+.my-style
+{
+padding: 8px 30px ;
+color: white;
+background-color: black;
+font-size: 20px;
+}
+
+.my-style:hover
+{
+color: black;
+background-color: white;
+border: 1px solid black;
+}
+
+/* ---------------------- End of contact section ---------------
+------------------------------------------------------------- */
